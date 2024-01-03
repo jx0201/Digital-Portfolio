@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Interactive Resume</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        header {
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            padding: 2em;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        section:hover {
+            transform: scale(1.02);
+        }
+
+        h1, h2, h3 {
+            color: #333;
+            transition: color 0.3s ease-in-out;
+        }
+
+        h2 {
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #555;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .contact {
+            margin-top: 20px;
+        }
+
+        .contact p {
+            margin: 5px 0;
+        }
+
+        .experience-item {
+            margin-bottom: 20px;
+        }
+
+        .education-item {
+            margin-bottom: 20px;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .skills div {
+            width: calc(50% - 10px);
+        }
+
+        @media print {
+            body {
+                background-color: #fff;
+            }
+        }
+
+        /* Responsive Design */
+        @media only screen and (max-width: 600px) {
+            h1 {
+                font-size: 1.5em;
+            }
+
+            h2 {
+                font-size: 1.2em;
+            }
+
+            .contact p {
+                font-size: 0.9em;
+            }
+
+            .education-item h3,
+            .experience-item h3 {
+                font-size: 1.2em;
+            }
+
+            .education-item p,
+            .experience-item p {
+                font-size: 0.9em;
+            }
+
+            .skills div {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Your Name</h1>
+        <p>Web Developer</p>
+    </header>
+
+    <section>
+        <h2>Contact Information</h2>
+        <div class="contact">
+            <p>Email: your.email@example.com</p>
+            <p>Phone: (123) 456-7890</p>
+            <p>LinkedIn: linkedin.com/in/yourname</p>
+            <p>GitHub: github.com/yourusername</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Summary</h2>
+        <p>Experienced and detail-oriented web developer with a passion for creating efficient and responsive websites. Proficient in HTML, CSS, and JavaScript, with expertise in front-end frameworks like React.js. Strong collaboration and communication skills with a proven track record of delivering high-quality projects on time.</p>
+    </section>
+
+    <section>
+        <h2>Education</h2>
+        <div class="education-item">
+            <h3>Degree in Computer Science</h3>
+            <p>University Name, Graduation Year</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Experience</h2>
+        <div class="experience-item">
+            <h3>Senior Web Developer</h3>
+            <p>Company Name, Start Date - Present</p>
+            <ul>
+                <li>Lead a team of developers in the successful implementation of complex web projects</li>
+                <li>Collaborated with clients to understand project requirements and deliver solutions that exceeded expectations</li>
+                <li>Provided technical guidance and mentoring to junior team members</li>
+            </ul>
+        </div>
+        <div class="experience-item">
+            <h3>Web Developer</h3>
+            <p>Previous Company, Start Date - End Date</p>
+            <ul>
+                <li>Developed and maintained responsive websites with a focus on user experience</li>
+                <li>Collaborated with UX/UI designers to implement visually appealing and intuitive interfaces</li>
+                <li>Conducted code reviews to ensure code quality and adherence to best practices</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Skills</h2>
+        <div class="skills">
+            <div>
+                <h3>Front-end</h3>
+                <ul>
+                    <li>HTML5, CSS3, JavaScript</li>
+                    <li>React.js, Angular</li>
+                    <li>Responsive Web Design</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Back-end</h3>
+                <ul>
+                    <li>Node.js, Express.js</li>
+                    <li>RESTful API development</li>
+                    <li>Database management (MongoDB, MySQL)</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Tools</h3>
+                <ul>
+                    <li>Git and Version Control</li>
+                    <li>Webpack, Babel</li>
+                    <li>Visual Studio Code, Sublime Text</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Soft Skills</h3>
+                <ul>
+                    <li>Effective Communication</li>
+                    <li>Problem Solving</li>
+                    <li>Team Collaboration</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
